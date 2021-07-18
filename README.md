@@ -4,7 +4,7 @@
 
 A free Mapbox GL basemap style for everyone with complete liberty to use and self host. dBi OSM Liberty Topo is a fork of [OSM Liberty](https://github.com/maputnik/osm-liberty) which is a fork of [OSM Bright](https://github.com/openmaptiles/osm-bright-gl-style) based on free data sources with a mission for a clear good looking design for the everyday user. It is based on the vector tile schema of [OpenMapTiles](https://github.com/openmaptiles/openmaptiles), with terrain layers from non-OpenStreetMap sources.
 
-**[Preview OSM Liberty with Maputnik](https://maputnik.github.io/editor/?style=https://github.com/dBitech/dbi-osm-liberty-topo/raw/gh-pages/style.json)**
+**[Preview OSM Liberty with Maputnik](https://maputnik.github.io/editor/?style=https://dbitech.github.io/dbi-osm-liberty-topo/style.json)**
 
 ## Usage
 
@@ -27,16 +27,16 @@ Another option is to create your own vector tiles with [OpenMapTiles](https://gi
     body { margin:0; padding:0; }
     #map { position:absolute; top:0; bottom:0; width:100%; }
   </style>
-  <script src='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js'></script>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css' rel='stylesheet' />
+  <script src='https://unpkg.com/maplibre-gl@1.15.2/dist/maplibre-gl.js'></script>
+  <link href='https://unpkg.com/maplibre-gl@1.15.2/dist/maplibre-gl.css' rel='stylesheet' />
 </head>
 <body>
   <div id='map'></div>
   <script>
-  var map = new mapboxgl.Map({
+  var map = new maplibregl.Map({
       container: 'map',
-      style: 'https://github.com/dBitech/dbi-osm-liberty-topo/raw/gh-pages/style.json',
-      center: [8.538961,47.372476],
+      style: 'https://dbitech.github.io/dbi-osm-liberty-topo/style.json',
+      center: [-119.28,49.872476],
       zoom: 5,
       hash: true
   });
@@ -60,7 +60,7 @@ Colored relief shading from Natural Earth make the low zoom levels look good.
 
 ## Edit the Style
 
-You can [edit the style directly online in Maputnik](https://maputnik.github.io/editor?style=https://github.com/dBitech/dbi-osm-liberty-topo/raw/gh-pages/style.json).
+You can [edit the style directly online in Maputnik](https://maputnik.github.io/editor?style=https://dbitech.github.io/dbi-osm-liberty-topo/style.json).
 
 This style actually triggered the need for the development of [Maputnik](https://github.com/maputnik/editor/).
 
