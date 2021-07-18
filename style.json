@@ -28,7 +28,7 @@
       "maxzoom": 15,
       "tileSize": 256,
       "encoding": "terrarium"
-    },
+    }
   },
   "sprite": "https://maputnik.github.io/osm-liberty/sprites/osm-liberty",
   "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
