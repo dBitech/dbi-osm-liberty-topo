@@ -1,10 +1,10 @@
-# OSM Liberty [![BSD licensed](https://img.shields.io/badge/license-BSD-blue.svg)](https://github.com/maputnik/osm-liberty/blob/gh-pages/LICENSE.md) [![GitHub CI status](https://github.com/maputnik/osm-liberty/workflows/CI/badge.svg)](https://github.com/maputnik/osm-liberty/actions?query=workflow%3ACI)
+# dBi Technologies OSM Liberty Topo [![BSD licensed](https://img.shields.io/badge/license-BSD-blue.svg)](https://github.com/dBiTech/dbi-osm-liberty-topo/blob/gh-pages/LICENSE.md) [![GitHub CI status](https://github.com/dBiTech/dbi-osm-liberty-topo/workflows/CI/badge.svg)](https://github.com/dBiTech/dbi-osm-liberty-topo/actions?query=workflow%3ACI)
 
 <img align="right" alt="OSM Liberty" src="logo.png" />
 
 A free Mapbox GL basemap style for everyone with complete liberty to use and self host. dBi OSM Liberty Topo is a fork of [OSM Liberty](https://github.com/maputnik/osm-liberty) which is a fork of [OSM Bright](https://github.com/openmaptiles/osm-bright-gl-style) based on free data sources with a mission for a clear good looking design for the everyday user. It is based on the vector tile schema of [OpenMapTiles](https://github.com/openmaptiles/openmaptiles), with terrain layers from non-OpenStreetMap sources.
 
-**[Preview OSM Liberty with Maputnik](https://maputnik.github.io/editor/?style=https://maputnik.github.io/osm-liberty/style.json)**
+**[Preview OSM Liberty with Maputnik](https://maputnik.github.io/editor/?style=https://github.com/dBitech/dbi-osm-liberty-topo/raw/gh-pages/style.json)**
 
 ## Usage
 
@@ -21,7 +21,7 @@ Another option is to create your own vector tiles with [OpenMapTiles](https://gi
 <html>
 <head>
   <meta charset=utf-8 />
-  <title>OSM Liberty</title>
+  <title>dBi Technologies OSM Liberty Topo</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <style>
     body { margin:0; padding:0; }
@@ -35,7 +35,7 @@ Another option is to create your own vector tiles with [OpenMapTiles](https://gi
   <script>
   var map = new mapboxgl.Map({
       container: 'map',
-      style: 'https://maputnik.github.io/osm-liberty/style.json',
+      style: 'https://github.com/dBitech/dbi-osm-liberty-topo/raw/gh-pages/style.json',
       center: [8.538961,47.372476],
       zoom: 5,
       hash: true
@@ -60,7 +60,7 @@ Colored relief shading from Natural Earth make the low zoom levels look good.
 
 ## Edit the Style
 
-You can [edit the style directly online in Maputnik](https://maputnik.github.io/editor?style=https://maputnik.github.io/osm-liberty/style.json).
+You can [edit the style directly online in Maputnik](https://maputnik.github.io/editor?style=https://github.com/dBitech/dbi-osm-liberty-topo/raw/gh-pages/style.json).
 
 This style actually triggered the need for the development of [Maputnik](https://github.com/maputnik/editor/).
 
