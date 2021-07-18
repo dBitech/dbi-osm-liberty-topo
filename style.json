@@ -2,7 +2,7 @@
   "version": 8,
   "name": "OSM Liberty",
   "metadata": {
-    "maputnik:license": "https://github.com/maputnik/osm-liberty/blob/gh-pages/LICENSE.md",
+    "maputnik:license": "https://github.com/dBiTech/dbi-osm-liberty-topo/blob/gh-pages/LICENSE.md",
     "maputnik:renderer": "mbgljs",
     "openmaptiles:version": "3.x"
   },
@@ -18,7 +18,17 @@
         "https://klokantech.github.io/naturalearthtiles/tiles/natural_earth_2_shaded_relief.raster/{z}/{x}/{y}.png"
       ],
       "type": "raster"
-    }
+    },
+    "terrarium": {
+      "type": "raster-dem",
+      "tiles": [
+        "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"
+      ],
+      "minzoom": 0,
+      "maxzoom": 15,
+      "tileSize": 256,
+      "encoding": "terrarium"
+    },
   },
   "sprite": "https://maputnik.github.io/osm-liberty/sprites/osm-liberty",
   "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
@@ -34,6 +44,17 @@
       "source": "natural_earth_shaded_relief",
       "maxzoom": 6,
       "paint": {"raster-opacity": {"base": 1.5, "stops": [[0, 0.6], [6, 0.1]]}}
+    },
+    {
+      "id": "terrain-rgb-terrarium",
+      "type": "hillshade",
+      "source": "terrarium",
+      "minzoom": 0,
+      "paint": {
+        "hillshade-shadow-color": "hsl(39, 21%, 33%)",
+        "hillshade-illumination-direction": 315,
+        "hillshade-exaggeration": 0.3
+      }
     },
     {
       "id": "park",
@@ -103,6 +124,7 @@
       "source": "openmaptiles",
       "source-layer": "landcover",
       "filter": ["all", ["==", "class", "ice"]],
+      "layout": {"visibility": "visible"},
       "paint": {
         "fill-antialias": false,
         "fill-color": "rgba(224, 236, 236, 1)",

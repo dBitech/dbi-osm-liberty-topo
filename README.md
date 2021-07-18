@@ -2,7 +2,7 @@
 
 <img align="right" alt="OSM Liberty" src="logo.png" />
 
-A free Mapbox GL basemap style for everyone with complete liberty to use and self host. OSM Liberty is a fork of OSM Bright based on free data sources with a mission for a clear good looking design for the everyday user. It is based on the vector tile schema of [OpenMapTiles](https://github.com/openmaptiles/openmaptiles).
+A free Mapbox GL basemap style for everyone with complete liberty to use and self host. dBi OSM Liberty Topo is a fork of [OSM Liberty](https://github.com/maputnik/osm-liberty) which is a fork of [OSM Bright](https://github.com/openmaptiles/osm-bright-gl-style) based on free data sources with a mission for a clear good looking design for the everyday user. It is based on the vector tile schema of [OpenMapTiles](https://github.com/openmaptiles/openmaptiles), with terrain layers from non-OpenStreetMap sources.
 
 **[Preview OSM Liberty with Maputnik](https://maputnik.github.io/editor/?style=https://maputnik.github.io/osm-liberty/style.json)**
 
@@ -50,7 +50,7 @@ Another option is to create your own vector tiles with [OpenMapTiles](https://gi
 - [OpenMapTiles](http://openmaptiles.org/) as vector data source
 - [Natural Earth Tiles](https://klokantech.github.io/naturalearthtiles/) for relief shading
 - [Maki](https://www.mapbox.com/maki-icons/) as icon set
-
+- [AWS Terrain Tiles](https://registry.opendata.aws/terrain-tiles/) as hillshade layer
 ## Map Design
 
 The map design originates from OSM Bright but strives to reach a unobtrusive and clean design for everyday use.
